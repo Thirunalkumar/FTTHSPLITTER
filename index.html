@@ -424,12 +424,25 @@
             </div>
             
             <div class="footer">
-                <p>THIRU GROUP &copy; 2023 | Fiber Optic Tools</p>
+                <p>THIRU GROUP &copy;<span id="currentYear"></span> | Fiber Optic Tools</p>
+
             </div>
         </div>
     </div>
 
     <script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var currentYear = new Date().getFullYear();
+    document.getElementById('currentYear').textContent = currentYear;
+  });
+</script>
+
+
+
+
+        
         // Fiber Optic Coupler data from the image
         const couplerData = [
             { type: "50/50 Coupler", lossA: 3.2, lossB: 3.2 },
